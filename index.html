@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Faithful Depictions | Christian Wall Art</title>
+
+  <meta
+    name="description"
+    content="Faithful Depictions creates meaningful Christian wall art designed to bring peace, hope, comfort, and faith into the home."
+  />
+
+  <style>
+    :root {
+      --background: #f8f5ee;
+      --surface: #ffffff;
+      --text: #25251f;
+      --muted: #68675f;
+      --accent: #8b6f47;
+      --accent-dark: #654e31;
+      --border: #e5dfd3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: rgba(248, 245, 238, 0.96);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-dark);
+    }
+
+    .hero {
+      min-height: 620px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 90px 0;
+      background:
+        linear-gradient(rgba(25, 22, 16, 0.48), rgba(25, 22, 16, 0.58)),
+        url("assets/hero.jpg") center / cover no-repeat;
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.7rem, 7vw, 5.5rem);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 24px auto 34px;
+      font-size: 1.2rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 4px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      padding: 30px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .about {
+      background: var(--surface);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .quote {
+      padding: 40px;
+      border-left: 4px solid var(--accent);
+      background: var(--background);
+      font-size: 1.4rem;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 14px auto 28px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 800px) {
+      .cards,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <a class="brand" href="index.html">Faithful Depictions</a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#artwork">Artwork</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Faith-inspired artwork</p>
+
+        <h1>Artwork that brings faith into the home</h1>
+
+        <p>
+          Faithful Depictions creates meaningful Christian wall art designed
+          to inspire peace, hope, comfort, and reflection.
+        </p>
+
+        <a
+          class="button"
+          href="YOUR-ETSY-STORE-URL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit the Etsy Shop
+        </a>
+      </div>
+    </section>
+
+    <section id="artwork">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Faith-centered art for meaningful spaces</h2>
+
+          <p>
+            Each piece is created to help make homes, prayer spaces,
+            nurseries, offices, and gathering places feel more peaceful
+            and spiritually uplifting.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Christian Wall Art</h3>
+            <p>
+              Reverent artwork inspired by themes of prayer, hope, healing,
+              love, strength, and connection with Christ.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Canvas Prints</h3>
+            <p>
+              Print-ready artwork prepared for display as canvas decor in
+              living rooms, bedrooms, offices, nurseries, and prayer spaces.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Digital Downloads</h3>
+            <p>
+              Accessible digital artwork for customers who prefer to print
+              locally and choose their own frame, size, and presentation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <div class="section-heading">
+            <h2>The idea behind Faithful Depictions</h2>
+          </div>
+
+          <p>
+            Faithful Depictions was created from a desire to make Christian
+            artwork that feels warm, peaceful, emotionally meaningful, and
+            welcoming in a variety of homes and spaces.
+          </p>
+
+          <p>
+            The collection focuses on broadly Christian themes rather than
+            denomination-specific imagery. Its purpose is to encourage
+            reflection, remind viewers of Christ's love, and create moments
+            of comfort and hope through visual art.
+          </p>
+
+          <p>
+            Technology may assist in the creative process, but each product
+            is selected, reviewed, prepared, and presented with care before
+            it is made available to customers.
+          </p>
+        </div>
+
+        <div class="quote">
+          “Created to bring peace, hope, comfort, and faith-filled beauty
+          into everyday life.”
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Explore the collection</h2>
+
+        <p>
+          Browse Christian wall art, canvas designs, and digital artwork
+          created for homes and spaces centered on faith.
+        </p>
+
+        <a
+          class="button"
+          href="https://www.etsy.com/shop/FaithfulDepictions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shop Faithful Depictions
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        © <span id="year"></span> Faithful Depictions
+      </div>
+
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:info@agilitasinc.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
